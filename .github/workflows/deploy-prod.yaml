@@ -86,7 +86,7 @@ jobs:
           mention: 'channel'
           if_mention: failure
           status: ${{ job.status }}
-          author_name: 'Application: datafabrikken | Environment: prod'
+          author_name: 'Application: datafabrikken-cms-service | Environment: prod'
           fields: commit,author,workflow,message
         env:
           GITHUB_TOKEN: ${{ github.token }}
