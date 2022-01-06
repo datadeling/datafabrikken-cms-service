@@ -81,11 +81,12 @@ module.exports = async (ctx, next) => {
     }
   }
 
-  const adminRole = await strapi
+  const authenticatedRole = await strapi
     .query('role', 'users-permissions')
-    .findOne({ type: 'admin' }, []);
-  const role = ctx.state.user?.roles?.length > 0 ? ctx.state.user.roles[0] : adminRole;
+    .findOne({ type: 'authenticated' }, []);
+  const role = ctx.state.user?.roles?.length > 0 ? ctx.state.user.roles[0] : authenticatedRole;
   const { route } = ctx.request;
+  console.log("route", route);
   const permission = await strapi
     .query('permission', 'users-permissions')
     .findOne(
