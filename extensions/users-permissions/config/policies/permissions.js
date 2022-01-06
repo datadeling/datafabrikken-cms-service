@@ -9,10 +9,6 @@ const projectNumber = process.env.PROJECT_NUMBER; // run `gcloud projects descri
 const expectedAudience = `/projects/${projectNumber}/global/backendServices/${backendServiceId}`;
 
 module.exports = async (ctx, next) => {
-  let publicRole = await strapi
-    .query('role', 'users-permissions')
-    .findOne({ type: 'public' }, []);
-
   const isIapEnabled =
     process.env.NODE_ENV !== 'development' &&
     backendServiceId &&
@@ -21,6 +17,7 @@ module.exports = async (ctx, next) => {
 
   if (!isIapEnabled && ctx.state.user) {
     // request is already authenticated in a different way
+    console.log("IAP disabled, user already authenticated")
     return next();
   }
 
@@ -82,9 +79,12 @@ module.exports = async (ctx, next) => {
         throw new Error('Exception in user creation in permissions');
       }
     }
- }
+  }
 
-  const role = ctx.state.user.roles?.length > 0 ? ctx.state.user.roles[0] : publicRole;
+  const adminRole = await strapi
+    .query('role', 'users-permissions')
+    .findOne({ type: 'admin' }, []);
+  const role = ctx.state.user.roles?.length > 0 ? ctx.state.user.roles[0] : adminRole;
   const { route } = ctx.request;
   const permission = await strapi
     .query('permission', 'users-permissions')
