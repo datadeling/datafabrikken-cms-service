@@ -84,7 +84,7 @@ module.exports = async (ctx, next) => {
   const adminRole = await strapi
     .query('role', 'users-permissions')
     .findOne({ type: 'admin' }, []);
-  const role = ctx.state.user.roles?.length > 0 ? ctx.state.user.roles[0] : adminRole;
+  const role = ctx.state.user?.roles?.length > 0 ? ctx.state.user.roles[0] : adminRole;
   const { route } = ctx.request;
   const permission = await strapi
     .query('permission', 'users-permissions')
