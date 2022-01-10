@@ -1,8 +1,8 @@
 {
   "kind": "collectionType",
-  "collectionName": "courses",
+  "collectionName": "guides",
   "info": {
-    "name": "Course",
+    "name": "Guide",
     "description": ""
   },
   "options": {
@@ -57,20 +57,6 @@
         }
       }
     },
-    "type": {
-      "type": "enumeration",
-      "required": false,
-      "enum": [
-        "INTRO_COURSE",
-        "ADVANCED_TRAINING",
-        "CONTINUING_EDUCATION"
-      ],
-      "pluginOptions": {
-        "i18n": {
-          "localized": false
-        }
-      }
-    },
     "primaryTargetGroup": {
       "type": "enumeration",
       "required": false,
@@ -87,38 +73,6 @@
     "durationInMinutes": {
       "type": "integer",
       "required": false,
-      "pluginOptions": {
-        "i18n": {
-          "localized": false
-        }
-      }
-    },
-    "numberOfModules": {
-      "type": "integer",
-      "required": false,
-      "pluginOptions": {
-        "i18n": {
-          "localized": false
-        }
-      }
-    },
-    "free": {
-      "type": "boolean",
-      "required": true,
-      "pluginOptions": {
-        "i18n": {
-          "localized": false
-        }
-      }
-    },
-    "provider": {
-      "type": "enumeration",
-      "required": true,
-      "enum": [
-        "DIGITAL_NORWAY",
-        "UIO",
-        "ELEMENTS_OF_AI"
-      ],
       "pluginOptions": {
         "i18n": {
           "localized": false
