@@ -5,6 +5,7 @@
     "icon": "targetGroup"
   },
   "options": {},
+  "globalId": "TargetGroups",
   "attributes": {
     "group": {
       "type": "enumeration",
