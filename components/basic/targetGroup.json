@@ -1,0 +1,19 @@
+{
+  "collectionName": "targetGroup",
+  "info": {
+    "name": "TargetGroup",
+    "icon": "targetGroup"
+  },
+  "options": {},
+  "attributes": {
+    "group": {
+      "type": "enumeration",
+      "enum": [
+        "dataProvider",
+        "dataConsumer",
+        "publicSector",
+        "privateSector"
+      ]
+    }
+  }
+}
