@@ -1,0 +1,25 @@
+{
+  "collectionName": "section",
+  "info": {
+    "name": "Section",
+    "icon": "reorder",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "content": {
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "type": "dynamiczone",
+      "components": [
+        "basic.quote",
+        "basic.image",
+        "basic.paragraph",
+        "basic.contact"
+      ]
+    }
+  }
+}
