@@ -24,7 +24,7 @@
         }
       }
     },
-    "Content": {
+    "content": {
       "pluginOptions": {
         "i18n": {
           "localized": true
@@ -34,7 +34,9 @@
       "components": [
         "basic.quote",
         "basic.image",
-        "basic.paragraph"
+        "basic.paragraph",
+        "basic.contact",
+        "basic.section"
       ]
     }
   }
