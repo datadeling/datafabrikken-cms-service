@@ -6,7 +6,7 @@
   },
   "options": {},
   "attributes": {
-    "Content": {
+    "content": {
       "type": "richtext"
     }
   }
