@@ -1,0 +1,45 @@
+{
+  "collectionName": "infobox",
+  "info": {
+    "name": "Infobox",
+    "icon": "info-sign"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "link": {
+      "type": "string",
+      "required": false,
+      "pluginOptions": {
+        "i18n": {
+          "localized": false
+        }
+      }
+    },
+    "content": {
+      "type": "richtext",
+      "required": false
+    },
+    "illustration": {
+      "type": "enumeration",
+      "required": true,
+      "enum": [
+        "CHAT",
+        "CHECKLIST",
+        "CONTACT",
+        "COURSE",
+        "SEARCH",
+        "VEILEDER"
+
+      ],
+      "pluginOptions": {
+        "i18n": {
+          "localized": false
+        }
+      }
+    }
+  }
+}
