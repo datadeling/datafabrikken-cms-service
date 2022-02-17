@@ -24,22 +24,16 @@
       "required": false
     },
     "illustration": {
-      "type": "enumeration",
-      "required": true,
-      "enum": [
-        "CHAT",
-        "CHECKLIST",
-        "CONTACT",
-        "COURSE",
-        "SEARCH",
-        "VEILEDER"
-
+      "collection": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
       ],
-      "pluginOptions": {
-        "i18n": {
-          "localized": false
-        }
-      }
+      "plugin": "upload",
+      "required": false,
+      "pluginOptions": {}
     }
   }
 }
