@@ -87,6 +87,29 @@
           "localized": false
         }
       }
+    },
+    "language": {
+      "type": "text",
+      "required": false,
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
+    },
+    "contentType": {
+      "type": "enumeration",
+      "required": false,
+      "enum": [
+        "TEXT",
+        "VIDEO",
+        "TEXT_AND_VIDEO"
+      ],
+      "pluginOptions": {
+        "i18n": {
+          "localized": false
+        }
+      }
     }
   }
 }
