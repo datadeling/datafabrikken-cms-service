@@ -111,14 +111,9 @@
         }
       }
     },
-    "provider": {
-      "type": "enumeration",
-      "required": true,
-      "enum": [
-        "DIGITAL_NORWAY",
-        "UIO",
-        "ELEMENTS_OF_AI"
-      ],
+    "providerId": {
+      "type": "integer",
+      "required": false,
       "pluginOptions": {
         "i18n": {
           "localized": false
