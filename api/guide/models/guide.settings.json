@@ -78,6 +78,15 @@
           "localized": false
         }
       }
+    },
+    "providerId": {
+      "type": "integer",
+      "required": false,
+      "pluginOptions": {
+        "i18n": {
+          "localized": false
+        }
+      }
     }
   }
 }
