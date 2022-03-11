@@ -25,6 +25,15 @@
         }
       }
     },
+    "position": {
+      "type": "integer",
+      "required": true,
+      "pluginOptions": {
+        "i18n": {
+          "localized": false
+        }
+      }
+    },
     "featureImage": {
       "model": "file",
       "via": "related",
