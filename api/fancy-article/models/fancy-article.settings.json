@@ -24,6 +24,14 @@
         }
       }
     },
+    "subtitle": {
+      "type": "string",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
+    },
     "content": {
       "pluginOptions": {
         "i18n": {
