@@ -26,7 +26,7 @@
       }
     },
     "subtitle": {
-      "type": "string",
+      "type": "text",
       "pluginOptions": {
         "i18n": {
           "localized": true

@@ -33,15 +33,6 @@
         }
       }
     },
-    "slug": {
-      "type": "string",
-      "required": true,
-      "pluginOptions": {
-        "i18n": {
-          "localized": true
-        }
-      }
-    },
     "content": {
       "pluginOptions": {
         "i18n": {
