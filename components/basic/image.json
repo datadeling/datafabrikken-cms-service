@@ -26,15 +26,15 @@
         "left",
         "right"
       ]
-    }
-  },
-  "alternativeBackgroundColor": {
-    "pluginOptions": {
-      "i18n": {
-        "localized": false
-      }
     },
-    "type": "boolean",
-    "required": false
+    "alternativeBackgroundColor": {
+      "pluginOptions": {
+        "i18n": {
+          "localized": false
+        }
+      },
+      "type": "boolean",
+      "required": false
+    }
   }
 }
