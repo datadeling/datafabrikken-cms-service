@@ -12,6 +12,15 @@
     },
     "author": {
       "type": "string"
+    },
+    "alternativeBackgroundColor": {
+      "pluginOptions": {
+        "i18n": {
+          "localized": false
+        }
+      },
+      "type": "boolean",
+      "required": false
     }
   }
 }
