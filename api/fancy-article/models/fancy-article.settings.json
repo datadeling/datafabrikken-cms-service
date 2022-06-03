@@ -45,7 +45,8 @@
         "basic.image",
         "basic.paragraph",
         "basic.contact",
-        "basic.infobox"
+        "basic.infobox",
+        "basic.factbox"
       ]
     }
   }
