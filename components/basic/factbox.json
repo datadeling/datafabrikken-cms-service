@@ -8,7 +8,8 @@
   "options": {},
   "attributes": {
     "title": {
-      "type": "string"
+      "type": "string",
+      "required": true
     },
     "content": {
       "type": "richtext"
@@ -18,7 +19,8 @@
       "enum": [
         "Normal",
         "Liten"
-      ]
+      ],
+      "required": true
     }
   }
 }
