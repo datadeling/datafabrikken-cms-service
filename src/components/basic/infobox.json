@@ -1,0 +1,48 @@
+{
+  "collectionName": "infobox",
+  "info": {
+    "name": "Infobox",
+    "icon": "info-sign",
+    "singularName": "infobox",
+    "pluralName": "infoboxes",
+    "displayName": "Infobox",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "link": {
+      "type": "string",
+      "required": false,
+      "pluginOptions": {
+        "i18n": {
+          "localized": false
+        }
+      }
+    },
+    "content": {
+      "type": "richtext",
+      "required": false
+    },
+    "illustration": {
+      "type": "media",
+      "required": false
+    },
+    "hoverIllustration": {
+      "type": "media",
+      "required": false
+    },
+    "alternativeBackgroundColor": {
+      "pluginOptions": {
+        "i18n": {
+          "localized": false
+        }
+      },
+      "type": "boolean",
+      "required": false
+    }
+  }
+}

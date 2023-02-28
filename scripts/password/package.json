@@ -1,0 +1,7 @@
+{
+  "name": "password",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "Jeff Reiffers (jeff@ouvir.no)",
+  "license": "MIT"
+}

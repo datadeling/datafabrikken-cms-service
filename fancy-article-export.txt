@@ -1,0 +1,14 @@
+2,Digdir launches an open online forum for anyone interested in data,\N,2021-07-01 14:00:38.183+00,2021-07-01 14:00:38.22+00,\N,6,6,en
+3,Digdir lanserer et åpent nettforum for alle som er interesserte i data,\N,2021-07-01 14:01:23.612+00,2021-07-01 14:01:23.649+00,\N,6,6,nn-NO
+9,Slik kommer du i gang med å bruke data fra andre,For deg som datakonsument\, kan det være en lang og kronglete vei fra behovet for databruk oppstår\, til du har alt i orden med tilganger\, kvalitetskontroll\, juridiske avtaler og bruksvilkår. Her er en kort introduksjon som vi håper du kan ha nytte av.,2022-02-11 12:29:31.771+00,2022-03-16 09:43:30.332+00,2022-02-11 12:35:05.564+00,10,10,nb-NO
+16,Datajegeren hjelper deg å finne data,Finner du ikke datasettet du trenger? Mange datasett fra offentlig sektor er tilgjengelige via vår datakatalog\, men denne er ikke komplett. Datajegeren hjelper bedrifter med å finne og få tilgang til datasett fra offentlig sektor.,2022-06-28 09:15:43.128+00,2022-09-02 06:51:31.229+00,2022-06-28 09:44:48.911+00,6,6,nb-NO
+10,Velkommen til Datalandsbyen,Datalandsbyen er etablert for å skape flere samtaler om hvordan data kan deles og brukes for å skape verdi for samfunnet. Delta i diskusjonene og bli med på laget. [Les mer om Datalandsbyen](https://datafabrikken.norge.no/datalandsbyen/om-datalandsbyen),2022-03-16 08:34:04.542+00,2022-03-16 08:34:08+00,2022-03-16 08:34:07.982+00,6,6,nb-NO
+12,Datafabrikken,\N,2022-04-29 08:40:50.935+00,2022-04-29 08:41:11.289+00,2022-04-29 08:41:11.262+00,6,6,nb-NO
+5,Kurs,\N,2022-01-13 11:10:39.535+00,2022-01-14 19:40:58.446+00,2022-01-14 19:40:58.427+00,6,6,nb-NO
+13,Datalandsbyen som møteplass,Datalandsbyen etableres for å skape flere samtaler om hvordan data kan deles og brukes for å skape verdi for samfunnet.,2022-05-13 13:10:35.581+00,2022-05-13 13:16:53.951+00,2022-05-13 13:13:51.691+00,6,6,nb-NO
+11,Datafabrikken er for deg som ser mulighetene i data,Nå utvikles Datafabrikken. Et sted for å hjelpe bedrifter og offentlige aktører med verdiskapning fra data.,2022-04-28 13:24:07.341+00,2022-06-01 12:34:08.621+00,2022-04-29 11:15:21.471+00,6,6,nb-NO
+14,Test ois,test,2022-06-02 08:21:37.286+00,2022-06-02 08:21:37.299+00,\N,6,6,nb-NO
+6,Kontakt,\N,2022-01-31 08:29:23.964+00,2022-01-31 08:29:20.801+00,2022-02-04 12:49:18.477+00,6,6,nb-NO
+8,Veiledning - dele og bruke data,\N,2022-02-11 12:08:07.321+00,2022-07-24 12:12:33.878+00,2022-02-11 14:22:58.207+00,6,6,nb-NO
+7,Slik blir du en god datatilbyder,Å tilby data er en kontinuerlig prosess som må ses i sammenheng med hvordan virksomheten behandler informasjon\, utvikler produkter og leverer tjenester. Slik kommer du i gang: ,2022-02-11 12:22:53.284+00,2022-02-11 12:02:48.457+00,2022-05-09 04:08:33.968+00,10,6,nb-NO
+15,Ny forside Datafabrikken,Vi gjør det enklere å skape verdier med data som ressurs,2022-06-17 12:45:11.399+00,2022-06-17 12:45:04.606+00,2022-08-31 11:08:07.304+00,6,6,nb-NO

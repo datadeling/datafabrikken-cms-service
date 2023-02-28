@@ -1,0 +1,36 @@
+{
+  "collectionName": "image",
+  "info": {
+    "name": "Image",
+    "icon": "image",
+    "singularName": "image",
+    "pluralName": "images",
+    "displayName": "Image",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "media": {
+      "type": "media",
+      "required": false
+    },
+    "style": {
+      "type": "enumeration",
+      "enum": [
+        "none",
+        "fullSize",
+        "left",
+        "right"
+      ]
+    },
+    "alternativeBackgroundColor": {
+      "pluginOptions": {
+        "i18n": {
+          "localized": false
+        }
+      },
+      "type": "boolean",
+      "required": false
+    }
+  }
+}
