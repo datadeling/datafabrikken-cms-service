@@ -1,0 +1,29 @@
+{
+  "collectionName": "components_basic_factboxes",
+  "info": {
+    "name": "Factbox",
+    "icon": "align-left",
+    "singularName": "factbox",
+    "pluralName": "factboxes",
+    "displayName": "Factbox",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "content": {
+      "type": "richtext"
+    },
+    "variant": {
+      "type": "enumeration",
+      "enum": [
+        "Normal",
+        "Liten"
+      ],
+      "required": true
+    }
+  }
+}

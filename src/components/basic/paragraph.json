@@ -1,0 +1,26 @@
+{
+  "collectionName": "paragraph",
+  "info": {
+    "name": "Paragraph",
+    "icon": "align-justify",
+    "singularName": "paragraph",
+    "pluralName": "paragraphs",
+    "displayName": "Paragraph",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "content": {
+      "type": "richtext"
+    },
+    "alternativeBackgroundColor": {
+      "pluginOptions": {
+        "i18n": {
+          "localized": false
+        }
+      },
+      "type": "boolean",
+      "required": false
+    }
+  }
+}

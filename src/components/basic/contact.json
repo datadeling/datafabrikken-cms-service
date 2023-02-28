@@ -1,0 +1,34 @@
+{
+  "collectionName": "contact",
+  "info": {
+    "name": "Contact",
+    "icon": "user",
+    "singularName": "contact",
+    "pluralName": "contacts",
+    "displayName": "Contact",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "image": {
+      "type": "media",
+      "required": false
+    },
+    "name": {
+      "type": "string",
+      "required": true
+    },
+    "jobTitle": {
+      "type": "string",
+      "required": false
+    },
+    "phoneNumber": {
+      "type": "string",
+      "required": false
+    },
+    "email": {
+      "type": "email",
+      "required": true
+    }
+  }
+}

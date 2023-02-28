@@ -1,8 +1,7 @@
-#!/bin/bash
+#!/bin/sh
+ln -sf /usr/bin/msmtp /usr/bin/sendmail
+ln -sf /usr/bin/msmtp /usr/sbin/sendmail
 
-echo "Setting up msmtp"
-
-ln -s /usr/bin/msmtp /usr/bin/sendmail
 touch /var/log/msmtprc && chmod 666 /var/log/msmtprc
 
 cat > /etc/msmtprc << EOL
@@ -11,7 +10,6 @@ defaults
 tls on
 tls_starttls on
 tls_certcheck off
-
 account default
 auth off
 host $SMTP_SERVER

@@ -1,14 +1,14 @@
-name: Deploy to production
+name: Deploy to staging
 
 on:
-  push:
+  pull_request:
+    types: [ready_for_review, opened, reopened, synchronize]
     branches:
       - main
-  workflow_dispatch:
 
 jobs:
-  build-test-and-deploy-production:
-    name: Build and deploy to production environment on merge to main branch
+  build-test-and-deploy-staging:
+    name: Build and deploy to staging environment when pull request is created
     runs-on: ubuntu-latest
 
     steps:
@@ -41,9 +41,10 @@ jobs:
         with:
           images: eu.gcr.io/datafabrikken-infra/datafabrikken-cms-service
           flavor: |
-            latest=true
+            latest=false
           tags: |
-            type=sha,prefix={{branch}}-,priority=1000
+            type=raw,value=staging_latest
+            type=raw,value=${{ github.sha }},priority=1000
             type=ref,event=branch
 
       - name: Build and push
@@ -66,7 +67,7 @@ jobs:
           helm fetch --untar --untardir ./helm datafabrikken/datafabrikken-cms-service
           helm template  \
             --set DOCKER_IMAGE_NAME="eu.gcr.io/datafabrikken-infra/datafabrikken-cms-service:${{ steps.meta.outputs.version }}" \
-            -f ./helm/datafabrikken-cms-service/values/prod.yaml \
+            -f ./helm/datafabrikken-cms-service/values/staging.yaml \
             ./helm/datafabrikken-cms-service/ > ./kubectlapply.yaml
           chmod o+w ./kubectlapply.yaml
           cat kubectlapply.yaml
@@ -74,14 +75,14 @@ jobs:
       - name: Auth gcloud CLI for deploy
         uses: google-github-actions/auth@main
         with:
-          credentials_json: ${{ secrets.DATAFABRIKKEN_PROD_AUTODEPLOY }}
+          credentials_json: ${{ secrets.DATAFABRIKKEN_DEV_AUTODEPLOY }}
 
       - name: Get credentials
         uses: google-github-actions/get-gke-credentials@v1
         with:
           cluster_name: datafabrikken-dev
           location: europe-north1-a
-
+      
       - run: kubectl apply -f ./kubectlapply.yaml --force
 
       - name: Notify slack
@@ -90,7 +91,7 @@ jobs:
           mention: 'channel'
           if_mention: failure
           status: ${{ job.status }}
-          author_name: 'Application: datafabrikken-cms-service | Environment: prod'
+          author_name: 'Application: datafabrikken-cms-service | Environment: staging'
           fields: commit,author,workflow,message
         env:
           GITHUB_TOKEN: ${{ github.token }}

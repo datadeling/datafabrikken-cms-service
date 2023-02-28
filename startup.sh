@@ -1,6 +1,6 @@
 #!/bin/bash
 
-echo "FDK CMS has been started"
+echo "Datafabrikken CMS has been started"
 
 /setup-msmtp.sh
 

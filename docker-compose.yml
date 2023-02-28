@@ -1,0 +1,58 @@
+version: "3"
+services:
+  strapi:
+    build: 
+      context: .
+      dockerfile: Dockerfile.dev
+    image: mystrapi:latest
+    restart: unless-stopped
+    environment:
+      POSTGRES_HOST: localhost
+      POSTGRES_PORT: 5433
+      POSTGRES_NAME: cms-v4
+      POSTGRES_USERNAME: postgres
+      POSTGRES_PASSWORD: p7A*-_lIP)2VbTNp    
+      APP_KEYS: testKey1,testKey2 
+      API_TOKEN_SALT: someRandomLongString
+      JWT_SECRET: jwt-secret
+      ADMIN_JWT_SECRET: admin-jwt-secret
+      CORS_ORIGIN: http://localhost:1337,https://data.norge.no
+    volumes:
+      - ./config:/opt/app/config
+      - ./src:/opt/app/src
+      - ./package.json:/opt/package.json
+      - ./yarn.lock:/opt/yarn.lock # Replace with package-lock.json if using npm
+    # ports:
+    #   - "1337:1337"
+    network_mode: "host"
+    # networks:
+
+      # strapi:
+      #   aliases:
+      #     - strapi
+    # depends_on:
+    #   - db
+
+  # db:
+  #   image: postgres:14-alpine
+  #   restart: unless-stopped
+  #   environment:
+  #     POSTGRES_USER: strapi
+  #     POSTGRES_PASSWORD: strapi
+  #     POSTGRES_DB: strapi
+  #   volumes:
+  #     - strapi-data:/var/lib/postgresql/data/ #using a volume
+  #   ports:
+  #     - "5432:5432"
+  #   networks:
+  #     strapi:
+  #       aliases:
+  #         - db
+
+# volumes:
+#     strapi-data:
+
+# networks:
+#   strapi:
+#     name: strapi
+    
