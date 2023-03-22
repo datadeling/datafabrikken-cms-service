@@ -79,7 +79,7 @@ jobs:
       - name: Get credentials
         uses: google-github-actions/get-gke-credentials@v1
         with:
-          cluster_name: datafabrikken-dev
+          cluster_name: datafabrikken-prod
           location: europe-north1-a
 
       - run: kubectl apply -f ./kubectlapply.yaml --force
